@@ -1,9 +1,9 @@
 public class Animals {
     private String name;
-    public static String sound(){
+    public String sound(){
         return "sound...";
     }
-    public static String eats() {
+    public String eats() {
         return "Food";
     }
     public String getName(){

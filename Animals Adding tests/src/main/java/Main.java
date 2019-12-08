@@ -6,6 +6,6 @@ public class Main{
         home.adoptPet(dog1);
         home.adoptPet(dog2);
         home.adoptPet(dog2);
-        home.makeAllSounds();
+        Home.makeAllSounds();
     }
 }

@@ -1,6 +1,6 @@
 import java.util.*;
 public class Home{
-    ArrayList<Animals> pets = new ArrayList<>();
+    static ArrayList<Animals> pets = new ArrayList<>();
     public void adoptPet(Animals pet){
         if(pets.contains(pet)){
             System.out.println("Oops!!... that pet has already been adopted");
@@ -9,9 +9,9 @@ public class Home{
             System.out.println("Pet has just been adopted.");
         }
     }
-    public void makeAllSounds(){
-        for(Animals a: pets){
-            a.sound();
+    public static void makeAllSounds(){
+        for (Animals pet: pets) {
+            System.out.println(pet.sound());
         }
     }
 }

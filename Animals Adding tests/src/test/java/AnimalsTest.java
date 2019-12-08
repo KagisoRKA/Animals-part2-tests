@@ -4,23 +4,27 @@ import static org.junit.jupiter.api.Assertions.*;
 class AnimalsTest extends Main {
     @Test
     void TestDogEats(){
-        assertEquals("Food",Dog.eats());
-//        assertEquals("food",Dog.eats()); This test fails
+        Dog dog = new Dog();
+        assertEquals("Food",dog.eats());
+//        assertEquals("food",dog.eats()); This test fails
     }
     @Test
     void TestCatEats(){
-        assertEquals("Food",Cat.eats());
-//        assertEquals("meat",Cat.eat()); This test fails
-//        assertEquals("food",Cat.eat()); This test fails
+        Cat cat = new Cat();
+        assertEquals("Food",cat.eats());
+//        assertEquals("meat",cat.eat()); This test fails
+//        assertEquals("food",cat.eat()); This test fails
     }
     @Test
     void TestDogSound(){
-        assertEquals("Barks",Dog.sound());
-//        assertEquals("Meow",Dog.sound());//This test fails
+        Dog dog = new Dog();
+        assertEquals("Barks", dog.sound());
+//        assertEquals("Meow",dog.sound());//This test fails
     }
     @Test
     void TestCatSound(){
-        assertEquals("Meow",Cat.sound());
-//        assertEquals("Bark",Cat.sound());//This test fails
+        Cat cat = new Cat();
+        assertEquals("Meow",cat.sound());
+//        assertEquals("Bark",cat.sound());//This test fails
     }
 }

@@ -1,5 +1,5 @@
 public class Cat extends Animals{
-    public static String sound(){
+    public String sound(){
         return "Meow";
     }
 }
